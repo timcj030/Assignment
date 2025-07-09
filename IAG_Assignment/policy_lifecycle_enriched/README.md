@@ -1,4 +1,4 @@
-# policy_lifecycle_enriched
+## policy_lifecycle_enriched
 
 This dbt project is for analyzing policy life cycle events from quote to bind to cancel
 
