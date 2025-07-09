@@ -1,0 +1,13 @@
+policy_lifecycle: #This should match name in profiles.yml
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: iag_test
+      dataset: policy_lifecycle
+      threads: 1
+      timeout_seconds: 300
+      location: australia-southeast1
+      keyfile: /path/service_account_key.json
+      priority: interactive 

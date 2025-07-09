@@ -1,0 +1,22 @@
+name: 'policy_lifecycle_enriched'
+version: '1.0.0'
+config-version: 2
+
+profile: 'policy_lifecycle' #This should match name in profiles.yml
+
+model-paths: ['models']
+seed-paths: ['seeds']
+test-paths: ['tests']
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+models:
+  policy_lifecycle:
+    staging:
+      +materialized: table
+    marts:
+      +materialized: table
+
+seeds:
+  policy_lifecycle:
+    +quote_columns: true 

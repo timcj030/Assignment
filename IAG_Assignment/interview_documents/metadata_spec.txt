@@ -1,0 +1,12 @@
+
+Field Definitions:
+- policy_id: Unique identifier for a policy
+- event_type: Type of event in the policy lifecycle [quote, bind, cancel]
+- event_timestamp: Timestamp when the event occurred
+
+Event Types:
+- quote: Customer requested a quote
+- bind: Policy was bound (finalized)
+- cancel: Policy was cancelled
+
+Each policy can have multiple events. Events should be sequenced by timestamp.

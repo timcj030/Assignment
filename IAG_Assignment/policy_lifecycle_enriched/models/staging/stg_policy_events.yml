@@ -1,0 +1,8 @@
+version: 2
+models:
+  - name: stg_policy_events
+    columns:
+      - name: policy_id      
+        tests:
+          - not_null
+          

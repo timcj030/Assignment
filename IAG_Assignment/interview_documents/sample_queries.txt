@@ -1,0 +1,6 @@
+
+Sample Queries:
+
+1. Number of policies that were quoted but never bound
+2. Average time from quote to bind per month
+3. Total number of policies cancelled within 30 days of binding
